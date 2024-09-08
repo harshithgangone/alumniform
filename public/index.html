@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alumni Entry Form</title>
+  
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: montserrat;
+  background-color: #0077b6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+}
+#interest{
+  display: inline;
+}
+.container {
+  font-weight: 650;
+  color: black;
+  background-color: #48cae4;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 35px;
+  border: 4px solid #023e8a;
+  text-align: left;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container form {
+  display: grid;
+  gap: 10px;
+}
+
+.container form label {
+  font-weight: bold;
+}
+
+.container form input,
+.container form select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.container form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #023e8a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+</style>
+
+<body>
+  <h1>Alumni Entry Form</h1>
+  <hr>
+  <div class="container">
+    <form id="entryForm">
+      <label for="name">Fullname:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="gender">Gender:</label>
+      <select name="gender" id="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select><br>
+      <label for="dob">Date Of Birth:</label>
+      <input type="date" id="dob" name="dob" required><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="phonenumber">phone number:</label>
+      <input type="tel" id="phonenumber" name="number" required><br><br>
+      <label for="alternatenumber">alternatenumber:</label>
+      <input type="tel" id="alternatenumber" name="alternatenumber" required><br><br>
+      <label for="branch">branch:</label>
+      <select name="branch" id="branch">
+        <option value="cse">CSE</option>
+        <option value="ds">CSE-DS</option>
+        <option value="iot">CSE-IOT</option>
+        <option value="cs">CSE-CS</option>
+        <option value="aiml">AIML</option>
+        <option value="ai">CSE-AIML</option>
+        <option value="cit">CSE-IT</option>
+        <option value="it">IT</option>
+        <option value="eee">EEE</option>
+        <option value="ece">ECE</option>
+        <option value="mech">MECHANICAL</option>
+      </select><br>
+      <label for="batch">batch:</label>
+      <select name="batch" id="batch">
+        <option value="2020-2024">2020-2024</option>
+        <option value="2021-2025">2021-2025</option>
+        <option value="2022-2026">2022-2026</option>
+        <option value="2023-2027">2023-2027</option>
+        <option value=">2024-2028">2024-2028</option>
+        <option value="2025-2029">2025-2029</option>
+        <option value="2026-2030">2026-2030</option>
+        <option value="2027-2031">2027-2031</option>
+        <option value="2028-2032">2028-2032</option>
+        <option value="2029-2033">2029-2033</option>
+        <option value="2030-2034">2030-2034</option>
+      </select><br>
+      <label for="graduationYear">Graduation Year:</label>
+      <input type="number" id="graduationYear" name="graduationYear" required><br><br>
+      <input type="checkbox" id="interest" name="interest">
+      <label for="interest">Interested to join Alumni Meet?</label>
+      
+      <br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
